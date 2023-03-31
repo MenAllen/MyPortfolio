@@ -20,8 +20,8 @@ export default function Home() {
 					<Image
 						className="md:hidden w-fill"
 						src="/images/homepage/mobile/image-homepage-hero.jpg"
-						width={311}
-						height={271}
+						width={450}
+						height={380}
 						alt=""
 					/>
 					<Image
@@ -40,13 +40,13 @@ export default function Home() {
 					/>
 				</div>
 
-				<div className="flex justify-between md:bottom-0 md:left-0 md:w-auto md:bg-white md:bg-opacity-50 ">
-					<h1 className="text-lg font-serif font-bold md:py-2 leading-10 mb-2 ">
+				<div className="flex flex-wrap justify-between m-2 md:bottom-0 md:left-0 md:w-auto md:bg-white md:bg-opacity-50 ">
+					<h1 className="text-md md:text-lg font-serif font-bold md:py-2 leading-10 mb-2 ">
 						Philippe, Développeur Web
 					</h1>
 					<Link href="/aboutme">
 						<button
-							className="text-xxs border uppercase text-white py-4 px-10 border-myBlue-700 bg-myBlue-700 hover:bg-myCyan-500 hover:border-myCyan-500 disabled:bg-myGrey-300 disabled:border-myGrey-300 transition-all text-myCyan-500 hover:text-myGrey-100"
+							className="text-xxs border uppercase rounded text-white py-4 px-10 border-myBlue-700 bg-myBlue-700 hover:bg-myCyan-500 hover:border-myCyan-500 disabled:bg-myGrey-300 disabled:border-myGrey-300 transition-all text-myCyan-500 hover:text-myGrey-100"
 							onClick={scrollToAbout}>
 							<div className="flex justify-between items-center w-full">
 								<div className="mr-10 ">
