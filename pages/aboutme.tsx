@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import { HeadComponent, Layout } from "../components/Layout/layout";
 import Link from 'next/link';
-import { DownArrowsSVG } from "../components/Icons/icons";
 
 export default function Aboutme() {
 	return (
@@ -29,7 +28,7 @@ export default function Aboutme() {
 					<Image
 						className="hidden xl:block"
 						src="/images/homepage/desktop/image-homepage-profile.jpg"
-						width={490}
+						width={505}
 						height={600}
 						alt=""
 					/>
@@ -39,14 +38,14 @@ export default function Aboutme() {
 					<p className="text-xs font-sans leading-7 mb-6">
 						I’m a junior front-end developer looking for a new role in an exciting company. I focus
 						on writing accessible HTML, using modern CSS practices and writing clean JavaScript.
-						When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are
-						required. I’m based in London, UK, but I’m happy working remotely and have experience in
-						remote teams. When I’m not coding, you’ll find me outdoors. I love being out in nature
-						whether that’s going for a walk, run or cycling. I’d love you to check out my work.
+						When writing JavaScript code, I mostly use React with Next, but I can adapt to whatever tools are
+						required. I’m based in Paris, but I’m happy working remotely and have experience in
+						remote teams. When I’m not coding, you’ll find me outdoors going for a walk, run or cycling 
+            in my beautiful area.I’d love you to check out my work.
 					</p>
 					<Link href="/curriculumv">
 						<button className="border-myGrey-900 px-10 py-4 border uppercase text-xxs tracking-wider hover:bg-myGrey-900 hover:text-white transition-all">
-							Go To Curriculum vitae
+							Go To Curriculum Vitae
 						</button>
 					</Link>
 				</div>

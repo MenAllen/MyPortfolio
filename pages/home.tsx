@@ -15,8 +15,8 @@ export default function Home() {
 			<HeadComponent title="Home" />
 
 			{/* Hero */}
-			<section className="mx-8 md:mx-10 xl:max-w-screen-xl xl:mx-auto relative mb-24">
-				<div className="mb-6 mt-2 xl:mt-6 flex flex-col items-center justify-center">
+			<section className="mx-8 md:mx-10 xl:max-w-screen-xl xl:mx-auto relative mb-6">
+				<div className="flex flex-col items-center justify-center">
 					<Image
 						className="md:hidden w-fill"
 						src="/images/homepage/mobile/image-homepage-hero.jpg"

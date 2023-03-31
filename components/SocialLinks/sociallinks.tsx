@@ -4,7 +4,7 @@ import { GithubSVG, LinkedinSVG, TwitterSVG } from '../Icons/icons'
 
 const SocialLinks = ({ fillColor = '#33323D' }: { fillColor?: string }): React.ReactElement => {
 	return (
-		<div className='flex items-center'>
+		<div className='flex items-center '>
 			<Link href='https://github.com/jwdesjardin'>
 				<GithubSVG
 					className='mr-4 cursor-pointer hover:transform hover:scale-110 '

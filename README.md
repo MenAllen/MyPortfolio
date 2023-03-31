@@ -13,6 +13,7 @@ Second, run the development server:
 ## Features
 
 Added About Me page
+Added Curriculum Vitae page
 
 ## Learn More
 
