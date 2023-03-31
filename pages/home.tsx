@@ -15,7 +15,7 @@ export default function Home() {
 			<HeadComponent title="Home" />
 
 			{/* Hero */}
-			<section className="mx-8 md:mx-10 xl:max-w-screen-xl xl:mx-auto relative mb-6">
+			<section className="mx-8 md:mx-10 xl:max-w-screen-xl xl:mx-auto mb-6">
 				<div className="flex flex-col items-center justify-center">
 					<Image
 						className="md:hidden w-fill"
@@ -40,7 +40,7 @@ export default function Home() {
 					/>
 				</div>
 
-				<div className="block relative md:absolute md:bottom-0 md:left-0 md:w-9/12 md:bg-white md:bg-opacity-50 lg:w-7/12 xl:w-6/12">
+				<div className="flex justify-between md:bottom-0 md:left-0 md:w-auto md:bg-white md:bg-opacity-50 ">
 					<h1 className="text-lg font-serif font-bold md:py-2 leading-10 mb-2 ">
 						Philippe, Développeur Web
 					</h1>
