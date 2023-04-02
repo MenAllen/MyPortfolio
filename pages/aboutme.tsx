@@ -43,9 +43,9 @@ export default function Aboutme() {
 						remote teams. When I’m not coding, you’ll find me outdoors going for a walk, run or cycling 
             in my beautiful area.I’d love you to check out my work.
 					</p>
-					<Link href="/curriculumv">
+					<Link href="/myprofile">
 						<button className="border-myGrey-900 px-10 py-4 border uppercase text-xxs tracking-wider hover:bg-myGrey-900 hover:text-white transition-all">
-							Go To Curriculum Vitae
+							More
 						</button>
 					</Link>
 				</div>

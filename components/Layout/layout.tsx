@@ -5,7 +5,7 @@ import { ReactElement, ReactNode } from 'react'
 
 export const Layout = ({ children }: { children: ReactNode }): ReactElement => {
 	return (
-		<div className='relative'>
+		<div className=''>
 			<Navbar></Navbar>
 			<main>{children}</main>
 			<Footer></Footer>

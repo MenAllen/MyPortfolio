@@ -14,6 +14,7 @@ Second, run the development server:
 
 Added About Me page
 Added Curriculum Vitae page
+Added My profile page
 
 ## Learn More
 

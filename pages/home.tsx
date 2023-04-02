@@ -15,7 +15,7 @@ export default function Home() {
 			<HeadComponent title="Home" />
 
 			{/* Hero */}
-			<section className="mx-8 md:mx-10 xl:max-w-screen-xl xl:mx-auto mb-6">
+			<section className="mx-8 md:mx-10 xl:max-w-screen-xl xl:mx-auto mb-6 relative">
 				<div className="flex flex-col items-center justify-center">
 					<Image
 						className="md:hidden w-fill"
@@ -40,21 +40,11 @@ export default function Home() {
 					/>
 				</div>
 
-				<div className="flex flex-wrap justify-between m-2 md:bottom-0 md:left-0 md:w-auto md:bg-white md:bg-opacity-50 ">
-					<h1 className="text-md md:text-lg font-serif font-bold md:py-2 leading-10 mb-2 ">
+				<div className="flex flex-wrap absolute bottom-0 left-1/2 bg-white bg-opacity-0">
+				<Link href="/myprofile">
+					<h1 className="cursor-pointer text-sm md:text-md xl:text-xl font-serif font-bold md:py-2 mb-2 self-end">
 						Philippe, Développeur Web
 					</h1>
-					<Link href="/aboutme">
-						<button
-							className="text-xxs border uppercase rounded text-white py-4 px-10 border-myBlue-700 bg-myBlue-700 hover:bg-myCyan-500 hover:border-myCyan-500 disabled:bg-myGrey-300 disabled:border-myGrey-300 transition-all text-myCyan-500 hover:text-myGrey-100"
-							onClick={scrollToAbout}>
-							<div className="flex justify-between items-center w-full">
-								<div className="mr-10 ">
-									<DownArrowsSVG></DownArrowsSVG>
-								</div>
-								<span className="text-myGrey-100">About Me</span>
-							</div>
-						</button>
 					</Link>
 				</div>
 			</section>
