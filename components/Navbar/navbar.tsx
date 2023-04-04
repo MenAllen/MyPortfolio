@@ -33,6 +33,9 @@ export const Navbar = () => {
 						<Link href='/home'>
 							<div className='py-6 border-b-4 border-myCyan-500 flex flex-col items-center justify-center cursor-pointer hover:bg-myGrey-700 hover:border-myGrey-700 uppercase text-white text-xxs font-sanslink-text'>Home</div>
 						</Link>
+						<Link href='/aboutme'>
+							<div className='py-6 border-b-4 border-myCyan-500 flex flex-col items-center justify-center cursor-pointer hover:bg-myGrey-700 hover:border-myGrey-700 uppercase text-white text-xxs font-sans'>About me</div>
+						</Link>
 						<Link href='/portfolio'>
 							<div className='py-6 border-b-4 border-myCyan-500 flex flex-col items-center justify-center cursor-pointer hover:bg-myGrey-700 hover:border-myGrey-700 uppercase text-white text-xxs font-sans'>Portfolio</div>
 						</Link>
