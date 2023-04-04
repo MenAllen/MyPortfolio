@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { HeadComponent, Layout } from "../components/Layout/layout";
-import { SideBar } from "../components/SideBar/sidebar"
+import { openSidebar, SideBar } from "../components/SideBar/sidebar"
 import Link from 'next/link';
 
 export default function Aboutme() {
@@ -46,7 +46,7 @@ export default function Aboutme() {
             in my beautiful area.I’d love you to check out my work.
 					</p>
 					<Link href="/aboutme">
-						<button className="border-myGrey-900 px-10 py-4 border uppercase text-xxs tracking-wider hover:bg-myGrey-900 hover:text-white transition-all">
+						<button className="border-myGrey-900 px-10 py-4 border uppercase text-xxs tracking-wider hover:bg-myGrey-900 hover:text-white transition-all" onClick={openSidebar}>
 							More
 						</button>
 					</Link>

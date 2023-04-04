@@ -13,6 +13,15 @@ import {
 	FilterLeftSVG,
 } from "../Icons/icons";
 
+export const openSidebar = () => {
+  if (typeof document !== "undefined") {
+    const eltsidebar = document.querySelector(".sidebar");
+    if (eltsidebar !== null) {
+      eltsidebar.classList.toggle("hidden");
+    }
+  }
+}
+
 export const SideBar = (): React.ReactElement => {
 	function dropdownAboutme() {
 		if (typeof document !== "undefined") {
@@ -22,7 +31,7 @@ export const SideBar = (): React.ReactElement => {
 				eltsubmenu.classList.toggle("hidden");
 			}
 			if (eltarrow !== null) {
-				eltarrow.classList.toggle("rotate-0");
+				eltarrow.classList.toggle("rotate-180");
 			}
 		}
 	}
@@ -35,31 +44,22 @@ export const SideBar = (): React.ReactElement => {
 				eltsubmenu.classList.toggle("hidden");
 			}
 			if (eltarrow !== null) {
-				eltarrow.classList.toggle("rotate-0");
+				eltarrow.classList.toggle("rotate-180");
 			}
 		}
 	}
 
-	dropdownAboutme();
-	dropdownProjects();
-
-	function openSidebar() {
-		if (typeof document !== "undefined") {
-			const eltsidebar = document.querySelector(".sidebar");
-			if (eltsidebar !== null) {
-				eltsidebar.classList.toggle("hidden");
-			}
-		}
-	}
+{/*	dropdownAboutme();
+dropdownProjects(); */}
 
 	return (
 		<>
 			<span
-				className="absolute top-32 left-20 text-white text-4xl top-5 left-4 cursor-pointer"
+				className="fixed top-32 left-20 text-white text-4xl top-5 left-4 cursor-pointer"
 				onClick={openSidebar}>
 				<FilterLeftSVG></FilterLeftSVG>
 			</span>
-			<div className="sidebar fixed left-2 p-2 w-[300px] overflow-y-auto text-center bg-gray-900">
+			<div className="sidebar fixed left-2 p-2 w-[300px] overflow-y-auto text-center bg-gray-900 hidden">
 				<div className="text-gray-100 text-xl">
 					<div className="p-2.5 mt-1 flex justify-between">
 						{/*          <Image
@@ -77,7 +77,6 @@ export const SideBar = (): React.ReactElement => {
 							<CloseXSVG></CloseXSVG>
 						</div>
 					</div>
-					<div className="my-2 bg-gray-600 h-[1px]"></div>
 				</div>
 {/*				<div className="p-2.5 flex items-center rounded-md px-4 duration-300 cursor-pointer bg-gray-700 text-white">
 					<i className="bi bi-search text-sm" />
@@ -100,7 +99,7 @@ export const SideBar = (): React.ReactElement => {
 						</span>
 					</div>
 				</div>
-				<div className="text-left text-sm mt-2 w-4/5 mx-auto text-gray-200" id="submenuAboutme">
+				<div className="text-left text-sm mt-2 w-4/5 mx-auto text-gray-200 hidden" id="submenuAboutme">
         <Link href="/curriculumv">
 					<div className="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white">
 						<BriefCaseSVG></BriefCaseSVG>
@@ -133,20 +132,12 @@ export const SideBar = (): React.ReactElement => {
 						</span>
 					</div>
 				</div>
-				<div className="text-left text-sm mt-2 w-4/5 mx-auto text-gray-200" id="submenuProjects">
+				<div className="text-left text-sm mt-2 w-4/5 mx-auto text-gray-200 hidden" id="submenuProjects">
 					<h1 className="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1">Social</h1>
 					<h1 className="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1">Personal</h1>
 					<h1 className="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1">Friends</h1>
 				</div>
 				<div className="my-4 bg-gray-600 h-[1px]"></div>
-				<div className="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white">
-					<LinkedinSVG></LinkedinSVG>
-					<span className="text-[15px] ml-4 text-gray-200">LinkedIn</span>
-				</div>
-				<div className="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white">
-					<GithubSVG></GithubSVG>
-					<span className="text-[15px] ml-4 text-gray-200">Github</span>
-				</div>
 			</div>
 
 			{/*    <script type="text/javascript">
