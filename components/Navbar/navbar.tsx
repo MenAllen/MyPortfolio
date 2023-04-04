@@ -8,7 +8,6 @@ export const Navbar = () => {
 	return (
 		<header className='flex justify-between items-center py-8 mx-8 md:mx-10 xl:max-w-screen-xl xl:mx-auto'>
 			<LogoSVG></LogoSVG>
-
 			<div className='hidden md:flex justify-between w-5/12 xl:w-1/4 items-center uppercase text-xxs '>
 				<Link href='/home'>
 					<a className='hover:text-myCyan-500 hover:font-bold '>Home</a>

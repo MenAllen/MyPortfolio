@@ -1,16 +1,18 @@
 import React from "react";
 import Image from "next/image";
 import { HeadComponent, Layout } from "../components/Layout/layout";
+import { SideBar } from "../components/SideBar/sidebar"
 import Link from 'next/link';
 
 export default function Aboutme() {
+
 	return (
 		<Layout>
-			<HeadComponent title="Aboutme" />
-
+			<HeadComponent title="Aboutme" />	
 			{/* About me */}
 			<section className="mx-8 md:mx-10 xl:max-w-screen-xl xl:mx-auto md:flex ">
-				<div className="md:w-5/12 xl:w-1/2 flex-shrink-0 flex flex-col items-center justify-center  ">
+			<SideBar></SideBar>		
+				<div className="md:w-5/12 xl:w-1/2 flex-shrink-0 flex flex-col items-center justify-center">			
 					<Image
 						className="md:hidden w-fill"
 						src="/images/homepage/mobile/image-homepage-profile.jpg"
@@ -43,7 +45,7 @@ export default function Aboutme() {
 						remote teams. When I’m not coding, you’ll find me outdoors going for a walk, run or cycling 
             in my beautiful area.I’d love you to check out my work.
 					</p>
-					<Link href="/myprofile">
+					<Link href="/aboutme">
 						<button className="border-myGrey-900 px-10 py-4 border uppercase text-xxs tracking-wider hover:bg-myGrey-900 hover:text-white transition-all">
 							More
 						</button>

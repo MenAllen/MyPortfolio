@@ -17,7 +17,7 @@ export const HeadComponent = ({ title }: { title: string }) => {
 	return (
 		<Head>
 			<title>{title}</title>
-			<link rel='icon' href='/images/favicon-32x32.png' />
+{/*			<link rel='icon' href='/images/favicon-32x32.png' /> */}
 		</Head>
 	)
 }
