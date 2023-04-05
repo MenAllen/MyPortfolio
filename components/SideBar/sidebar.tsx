@@ -55,7 +55,7 @@ dropdownProjects(); */}
 	return (
 		<>
 			<span
-				className="fixed top-32 left-20 text-white text-4xl top-5 left-4 cursor-pointer"
+				className="fixed top-40 left-20 text-white text-4xl top-5 left-4 cursor-pointer"
 				onClick={openSidebar}>
 				<FilterLeftSVG></FilterLeftSVG>
 			</span>
@@ -108,12 +108,14 @@ dropdownProjects(); */}
 						</h1>
 					</div>
           </Link>
+          <Link href="/myskills">
 					<div className="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white">
 						<SliderSVG></SliderSVG>
 						<h1 className="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1">
 							Technical Skills
 						</h1>
 					</div>
+          </Link>
 					<div className="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white">
 						<GraduateSVG></GraduateSVG>
 						<h1 className="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1">Certifications</h1>

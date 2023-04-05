@@ -2,8 +2,6 @@ import React from "react";
 import Image from "next/image";
 import { HeadComponent, Layout } from "../components/Layout/layout";
 import Link from "next/link";
-import { Interested } from "../components/Interested/interested";
-import { DownArrowsSVG } from "../components/Icons/icons";
 
 export default function Home() {
 	const scrollToAbout = () => {
