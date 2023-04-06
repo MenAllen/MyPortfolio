@@ -39,7 +39,7 @@ export default function Home() {
 				</div>
 
 				<div className="flex flex-wrap absolute bottom-0 left-1/2 bg-white bg-opacity-0">
-				<Link href="/myprofile">
+				<Link href="/aboutme">
 					<h1 className="cursor-pointer text-sm md:text-md xl:text-xl font-serif font-bold md:py-2 mb-2 self-end">
 						Philippe, Développeur Web
 					</h1>

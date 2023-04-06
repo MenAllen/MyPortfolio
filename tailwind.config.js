@@ -45,6 +45,7 @@ module.exports = {
 					500: '#5FB4A2',
 				},
 				myBlue: {
+					400: '#154B6F',
 					700: '#203A4C',
 				},
 				myGrey: {
@@ -56,6 +57,9 @@ module.exports = {
 				myRed: {
 					600: '#F43030',
 				},
+				myGreen: {
+					300: '#606C38',
+				}
 			},
 		},
 	},

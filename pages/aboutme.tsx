@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { HeadComponent, Layout } from "../components/Layout/layout";
-import { openSidebar, SideBar } from "../components/SideBar/sidebar"
+import { openSidebar, SideBar } from "../components/SideBar/sidebar";
 import Link from 'next/link';
 
 export default function Aboutme() {
