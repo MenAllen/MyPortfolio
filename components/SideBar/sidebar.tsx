@@ -52,7 +52,7 @@ export const SideBar = (): React.ReactElement => {
 	return (
 		<>
 			<span
-				className="fixed top-40 left-6 text-white text-4xl cursor-pointer"
+				className="fixed top-40 left-6 z-20 text-white text-4xl cursor-pointer"
 				onClick={openSidebar}>
 				<FilterLeftSVG></FilterLeftSVG>
 			</span>

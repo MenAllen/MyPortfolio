@@ -17,6 +17,7 @@ Added Curriculum Vitae page
 Added My profile page
 Added SideBar
 Added Skills tab
+Added Portfolio Page
 
 ## Learn More
 
