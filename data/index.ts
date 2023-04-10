@@ -85,7 +85,7 @@ export const Projects: ProjectData[] = [
 		],
 	},
 	{
-		slug: 'manage',
+		slug: 'toto',
 		heroImage: '/images/portfolio/web-loceane.webp',
 		previewImage: '/images/portfolio/web-loceane.webp',
 		images: [
@@ -109,7 +109,7 @@ export const Projects: ProjectData[] = [
 		],
 	},
 	{
-		slug: 'manage',
+		slug: 'ragou',
 		heroImage: '/images/portfolio/web-loceane.webp',
 		previewImage: '/images/portfolio/web-loceane.webp',
 		images: [

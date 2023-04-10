@@ -1,11 +1,10 @@
 import React from 'react'
 
-/*
-import { ProjectHero } from '../../components/ProjectHero'
-import { ProjectDetails } from '../../components/ProjectDetails'
-import { ProjectContent } from '../../components/ProjectContent'
-import { Navigation } from '../../components/Navigation'
-import { HeadComponent, Layout } from '../../components/Layout'
+import { ProjectHero } from '../../components/ProjectHero/projecthero'
+import { ProjectDetails } from '../../components/ProjectDetails/projectdetails'
+import { ProjectContent } from '../../components/ProjectContent/projectcontent'
+import { Navigation } from '../../components/Navigation/navigation'
+import { HeadComponent, Layout } from '../../components/Layout/layout'
 
 import { Projects } from '../../data'
 import { InferGetStaticPropsType } from 'next'
@@ -45,7 +44,7 @@ export default function Project({
 		<Layout>
 			<HeadComponent title={data.title} />
 			<ProjectHero imgURL={data.heroImage}></ProjectHero>
-			<section className='content-container xl:flex xl:items-start'>
+			<section className='mx-8 md:mx-10 xl:max-w-screen-xl xl:mx-auto xl:flex xl:items-start'>
 				<ProjectDetails
 					title={data.title}
 					description={data.description}
@@ -60,4 +59,3 @@ export default function Project({
 		</Layout>
 	)
 }
-*/
