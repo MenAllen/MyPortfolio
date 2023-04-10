@@ -32,7 +32,7 @@ export default function Myskills({ skills }: InferGetStaticPropsType<typeof getS
 
 			<div className="h-1 h-20 mx-10 xl:max-w-screen-xl xl:mx-auto">
 				<div className='bg-myBlue-400 rounded w-1/2'>
-				<p className="text-md text-center text-white font-bold">Technical skills</p>
+				<p className="text-sm sm:text-md text-center text-white font-bold">Technical skills</p>
 				</div>
 			</div>
 			<SideBar />

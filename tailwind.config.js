@@ -38,7 +38,6 @@ module.exports = {
 			xl: '1110px',
 			xxl: '1190px',
 		},
-
 		extend: {
 			colors: {
 				myCyan: {

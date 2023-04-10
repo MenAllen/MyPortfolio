@@ -120,7 +120,7 @@ export const SideBar = (): React.ReactElement => {
 				<div
 					className="text-left text-sm mt-2 w-4/5 mx-auto text-gray-200 hidden"
 					id="submenuProjects">
-					<Link href="/myProjects">
+					<Link href="/myprojects">
 						<h1 className="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1">All Projects</h1>
 					</Link>
 					<h1 className="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1">Web Projects</h1>
