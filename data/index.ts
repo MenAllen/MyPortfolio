@@ -54,8 +54,8 @@ export interface ProjectData {
 	description: string
 	development_topics: string[]
 	stack: string[]
-	code_url?: string
-	demo_url?: string
+	code_url: string
+	demo_url: string
 	background: string[]
 }
 

@@ -18,7 +18,8 @@ Added My profile page
 Added SideBar
 Added Skills tab
 Added Portfolio Page
-Added Portfolio animations & responsive fixes 
+Added Portfolio animations & responsive fixes
+Added Project Page step 1
 
 
 ## Learn More

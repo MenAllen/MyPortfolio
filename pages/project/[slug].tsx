@@ -17,17 +17,18 @@ export async function getStaticPaths() {
 	return { paths, fallback: false }
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params }: any) {
+  
 	const data = Projects.find((project) => project.slug === params.slug)
 	const index = Projects.findIndex((project) => project.slug === params.slug)
 	const total = Projects.length - 1
 
 	const previousIdx = index - 1 > -1 ? index - 1 : total
 	const nextIdx = index + 1 > total ? 0 : index + 1
-	console.log(previousIdx, nextIdx)
+	console.log(previousIdx, nextIdx, data)
 	return {
 		props: {
-			data,
+			data: Projects[index] || null,
 			previous: Projects[previousIdx] || null,
 			next: Projects[nextIdx] || null,
 		},
@@ -39,7 +40,7 @@ export default function Project({
 	previous,
 	next,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-	console.log(previous, next)
+
 	return (
 		<Layout>
 			<HeadComponent title={data.title} />

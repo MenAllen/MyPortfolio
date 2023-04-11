@@ -17,6 +17,7 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+		"./node_modules/tw-elements/dist/js/**/*.js",
   ],
 	theme: {
 		fontFamily: {
@@ -65,7 +66,8 @@ module.exports = {
 	variants: {
 		extend: {},
 	},
-	plugins: [],
+	plugins: [require("tw-elements/dist/plugin.cjs")],
+	darkMode: "class"
 }
 
 
