@@ -20,6 +20,7 @@ Added Skills tab
 Added Portfolio Page
 Added Portfolio animations & responsive fixes
 Added Project Page step 1
+Added Project Page step 2
 
 
 ## Learn More

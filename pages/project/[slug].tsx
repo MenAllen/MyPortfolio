@@ -25,8 +25,8 @@ export async function getStaticProps({ params }: any) {
 
 	const previousIdx = index - 1 > -1 ? index - 1 : total
 	const nextIdx = index + 1 > total ? 0 : index + 1
-	console.log(previousIdx, nextIdx, data)
-	return {
+
+  return {
 		props: {
 			data: Projects[index] || null,
 			previous: Projects[previousIdx] || null,
@@ -44,17 +44,18 @@ export default function Project({
 	return (
 		<Layout>
 			<HeadComponent title={data.title} />
-			<ProjectHero imgURL={data.heroImage}></ProjectHero>
+			<ProjectHero images={data.images}></ProjectHero>
 			<section className='mx-8 md:mx-10 xl:max-w-screen-xl xl:mx-auto xl:flex xl:items-start'>
 				<ProjectDetails
 					title={data.title}
 					description={data.description}
+					competences={data.competences}
 					topics={data.development_topics}
 					stack={data.stack}
 					codeURL={data.code_url}
 					demoURL={data.demo_url}
 				></ProjectDetails>
-				<ProjectContent images={data.images} background={data.background}></ProjectContent>
+{/*				<ProjectContent images={data.images} background={data.background}></ProjectContent> */}
 			</section>
 			<Navigation previous={previous} next={next}></Navigation>
 		</Layout>

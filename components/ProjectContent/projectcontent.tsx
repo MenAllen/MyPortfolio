@@ -6,7 +6,7 @@ export const ProjectContent = ({
 	images,
 }: {
 	background: string[]
-	images: string[]
+	images: {url: string, label: string, desc: string}[]
 }) => {
 	return (
 		<div className='pt-12 pb-8 xl:w-7/12 xl:pl-12 xl:pt-0'>
@@ -22,7 +22,7 @@ export const ProjectContent = ({
 			<h2 className='heading-text-thin-md mb-10'>Static Previews</h2>
 			{images.map((image, idx) => (
 				<div key={idx} className='mb-8'>
-					<Image src={image} alt='' width='689' height='434' />
+					<Image src={image.url} alt='' width='689' height='434' />
 				</div>
 			))}
 		</div>

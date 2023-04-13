@@ -4,6 +4,7 @@ import { ProjectData } from '../../data'
 import { ArrowLeftSVG, ArrowRightSVG } from '../Icons/icons'
 
 export const Navigation = ({ previous, next }: { previous: ProjectData; next: ProjectData }) => {
+
 	return (
 		<div className='content-container section-border-y-grey flex flex-row'>
 			<div className='w-1/2 border-r-2 border-myGrey-300 pb-6 md:pb-8 md:flex md:items-center  md:flex-row'>
