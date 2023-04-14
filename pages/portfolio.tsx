@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { HeadComponent, Layout } from "../components/Layout/layout";
 import { openSidebar, SideBar } from "../components/SideBar/sidebar";
 
@@ -9,7 +8,6 @@ export default function Portfolio() {
 		<Layout>
 			<HeadComponent title="Portfolio" />
 			<SideBar></SideBar>
-
 			<section className="mx-8 md:mx-10 xl:max-w-screen-xl xl:mx-auto mb-6 ">
 				<div className="flex flex-col items-center justify-center  relative">
 					<Image
@@ -41,12 +39,10 @@ export default function Portfolio() {
 						Que ce soit comme consultant web, en formation chez Openclassrooms, comme développeur
 						logiciel embarqué ou comme chef de projet, découvrez mes réalisations
 					</p>
-					<Link href="/myprojects">
 					<button
-						className="border-myGrey-900 px-6 py-2 md:px-10 md:py-4 border uppercase text-xxs tracking-wider hover:bg-myGrey-900 hover:text-white transition-all">
+						className="border-myGrey-900 px-6 py-2 md:px-10 md:py-4 border uppercase text-xxs tracking-wider hover:bg-myGrey-900 hover:text-white transition-all" onClick={() => openSidebar('portfolio')}>
 						More
 					</button>
-					</Link>
 				</div>
         </div>
 			</section>

@@ -1,9 +1,7 @@
 import Link from "next/link";
 import React from "react";
-import Image from "next/image";
+
 import {
-	LinkedinSVG,
-	GithubSVG,
 	ChevronDownSVG,
 	CloseXSVG,
 	BriefCaseSVG,
@@ -13,14 +11,31 @@ import {
 	FilterLeftSVG,
 } from "../Icons/icons";
 
-export const openSidebar = () => {
+export function openSidebar(param: string) {
 	if (typeof document !== "undefined") {
 		const eltsidebar = document.querySelector(".sidebar");
-		if (eltsidebar !== null) {
+		const eltminimize = document.querySelector(".minimize");
+		const eltprojects = document.querySelector(".projects");
+		const eltaboutme = document.querySelector(".aboutme");
+
+		if (eltsidebar !== null && eltminimize !== null) {
 			eltsidebar.classList.toggle("hidden");
+			eltminimize.classList.remove("hidden");
+
+			if (eltprojects !== null && eltaboutme !== null) {
+				if (param !== "none") {
+					if (param === "aboutme") {
+						eltprojects.classList.add("hidden");
+						eltaboutme.classList.remove("hidden");
+					} else {
+						eltaboutme.classList.add("hidden");
+						eltprojects.classList.remove("hidden");
+					}
+				}
+			}
 		}
 	}
-};
+}
 
 export const SideBar = (): React.ReactElement => {
 	function dropdownAboutme() {
@@ -52,8 +67,8 @@ export const SideBar = (): React.ReactElement => {
 	return (
 		<>
 			<span
-				className="fixed top-40 left-6 z-20 text-white text-4xl cursor-pointer"
-				onClick={openSidebar}>
+				className="minimize fixed top-40 left-6 z-20 text-white text-4xl cursor-pointer hidden"
+				onClick={() => openSidebar("none")}>
 				<FilterLeftSVG></FilterLeftSVG>
 			</span>
 			<div className="sidebar fixed left-2 p-2 w-[300px] z-20 overflow-y-auto text-center bg-gray-900 hidden">
@@ -62,14 +77,14 @@ export const SideBar = (): React.ReactElement => {
 						<h1 className="text-gray-200 text-[15px] ml-3">
 							Philippe Joubard<br></br>Développeur Web
 						</h1>
-						<div className="cursor-pointer" onClick={openSidebar}>
+						<div className="cursor-pointer" onClick={() => openSidebar("none")}>
 							<CloseXSVG></CloseXSVG>
 						</div>
 					</div>
 				</div>
 				<div className="my-4 bg-gray-600 h-[1px]"></div>
 				<div
-					className="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
+					className="aboutme p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
 					onClick={dropdownAboutme}>
 					<TvSVG></TvSVG>
 					<i className="bi bi-chat-left-text-fill" />
@@ -104,9 +119,8 @@ export const SideBar = (): React.ReactElement => {
 						<h1 className="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1">Certifications</h1>
 					</div>
 				</div>
-				<div className="my-4 bg-gray-600 h-[1px]"></div>
 				<div
-					className="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
+					className="projects p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
 					onClick={dropdownProjects}>
 					<TvSVG></TvSVG>
 					<i className="bi bi-chat-left-text-fill" />
