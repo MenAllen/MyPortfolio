@@ -22,6 +22,8 @@ export function openSidebar(param: string) {
 			eltsidebar.classList.toggle("hidden");
 			eltminimize.classList.remove("hidden");
 
+console.log(eltminimize.classList)
+
 			if (eltprojects !== null && eltaboutme !== null) {
 				if (param !== "none") {
 					if (param === "aboutme") {
@@ -69,7 +71,7 @@ export const SideBar = (): React.ReactElement => {
 			<span
 				className="minimize fixed top-40 left-6 z-20 text-white text-4xl cursor-pointer hidden"
 				onClick={() => openSidebar("none")}>
-				<FilterLeftSVG></FilterLeftSVG>
+				<FilterLeftSVG />
 			</span>
 			<div className="sidebar fixed left-2 p-2 w-[300px] z-20 overflow-y-auto text-center bg-gray-900 hidden">
 				<div className="text-gray-100 text-xl">
@@ -108,16 +110,18 @@ export const SideBar = (): React.ReactElement => {
 					</Link>
 					<Link href="/myskills">
 						<div className="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white">
-							<SliderSVG></SliderSVG>
+							<SliderSVG />
 							<h1 className="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1">
 								Technical Skills
 							</h1>
 						</div>
 					</Link>
+					<Link href="/myCertifications">
 					<div className="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white">
-						<GraduateSVG></GraduateSVG>
+						<GraduateSVG />
 						<h1 className="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1">Certifications</h1>
 					</div>
+					</Link>
 				</div>
 				<div
 					className="projects p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
@@ -127,7 +131,7 @@ export const SideBar = (): React.ReactElement => {
 					<div className="flex justify-between w-full items-center">
 						<span className="text-[15px] ml-4 text-gray-200">Portfolio</span>
 						<span className="text-sm rotate-180" id="arrowProjects">
-							<ChevronDownSVG></ChevronDownSVG>
+							<ChevronDownSVG />
 						</span>
 					</div>
 				</div>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ProjectHero } from '../../components/ProjectHero/projecthero'
+import { Carrousel } from '../../components/Carrousel/carrousel'
 import { ProjectDetails } from '../../components/ProjectDetails/projectdetails'
 import { ProjectContent } from '../../components/ProjectContent/projectcontent'
 import { Navigation } from '../../components/Navigation/navigation'
@@ -44,7 +44,7 @@ export default function Project({
 	return (
 		<Layout>
 			<HeadComponent title={data.title} />
-			<ProjectHero images={data.images}></ProjectHero>
+			<Carrousel images={data.images}></Carrousel>
 			<section className='mx-8 md:mx-10 xl:max-w-screen-xl xl:mx-auto xl:flex xl:items-start'>
 				<ProjectDetails
 					title={data.title}

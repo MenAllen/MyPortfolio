@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect }  from "react";
 import { SkillCard } from "../components/SkillCard/skillcard";
 import { HeadComponent, Layout } from "../components/Layout/layout";
-import { SideBar } from "../components/SideBar/sidebar";
+import { openSidebar, SideBar } from "../components/SideBar/sidebar";
 import { InferGetStaticPropsType } from "next";
 import { Skills } from "../data";
 
@@ -25,6 +25,10 @@ export default function Myskills({ skills }: InferGetStaticPropsType<typeof getS
 		"Système",
 	];
 	const len = skillTypeTab.length;
+
+	useEffect(() => {
+    openSidebar('aboutme');
+  }, []);
 
 	return (
 		<Layout>
@@ -50,7 +54,6 @@ export default function Myskills({ skills }: InferGetStaticPropsType<typeof getS
 						/>
 					))}
 			</section>
-
 		</Layout>
 	);
 }

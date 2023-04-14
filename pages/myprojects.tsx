@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { ProjectCard } from "../components/ProjectCard/projetcard";
 import { HeadComponent, Layout } from "../components/Layout/layout";
 import { openSidebar, SideBar } from "../components/SideBar/sidebar";
@@ -15,6 +15,11 @@ export async function getStaticProps() {
 }
 
 export default function Portfolio({ projects }: InferGetStaticPropsType<typeof getStaticProps>) {
+
+	useEffect(() => {
+    openSidebar('aboutme');
+  }, []);
+
 	return (
 		<Layout>
 			<HeadComponent title="Portfolio"></HeadComponent>

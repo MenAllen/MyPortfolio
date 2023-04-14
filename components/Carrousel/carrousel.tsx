@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/20/solid";
 
-export const ProjectHero = ({
+export const Carrousel = ({
 	images,
 }: {
 	images: { image: string; title: string; description: string }[];
