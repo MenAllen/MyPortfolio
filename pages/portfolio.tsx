@@ -41,7 +41,7 @@ export default function Portfolio() {
 						</p>
 						<button
 							className="border-myGrey-900 px-6 py-2 md:px-10 md:py-4 border uppercase text-xxs tracking-wider hover:bg-myGrey-900 hover:text-white transition-all"
-							onClick={() => openSidebar("portfolio")}>
+							onClick={openSidebar}>
 							More
 						</button>
 					</div>

@@ -49,7 +49,49 @@ export const Skills: SkillData[] = [
 		version: '2',
 		level: 3,
 		type: 'language'
-	}
+	},
+	{
+		slug: '5',
+		logo: '/logos/bootstrap-fill.svg',
+		name: 'Bootstrap',
+		version: '2',
+		level: 3,
+		type: 'framework'
+	},
+	{
+		slug: '6',
+		logo: '/logos/sass.svg',
+		name: 'Sass',
+		version: '2',
+		level: 3,
+		type: 'preprocesseur'
+	},
+	{
+		slug: '7',
+		logo: '/logos/react.svg',
+		name: 'React',
+		version: '2',
+		level: 3,
+		type: 'framework'
+	},
+	{
+		slug: '8',
+		logo: '/logos/next-js.svg',
+		name: 'NextJS',
+		version: '2',
+		level: 3,
+		type: 'framework'
+	},
+	{
+		slug: '9',
+		logo: '/logos/nodejs.svg',
+		name: 'NodeJS',
+		version: '2',
+		level: 3,
+		type: 'outil'
+	},
+
+
 ]
 
 /* ========================================================================================= */

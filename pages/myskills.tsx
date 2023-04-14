@@ -1,7 +1,7 @@
-import React, { useEffect }  from "react";
+import React from "react";
 import { SkillCard } from "../components/SkillCard/skillcard";
 import { HeadComponent, Layout } from "../components/Layout/layout";
-import { openSidebar, SideBar } from "../components/SideBar/sidebar";
+import { SideBar } from "../components/SideBar/sidebar";
 import { InferGetStaticPropsType } from "next";
 import { Skills } from "../data";
 
@@ -26,10 +26,6 @@ export default function Myskills({ skills }: InferGetStaticPropsType<typeof getS
 	];
 	const len = skillTypeTab.length;
 
-	useEffect(() => {
-    openSidebar('aboutme');
-  }, []);
-
 	return (
 		<Layout>
 			<HeadComponent title="Myskills" />
@@ -40,7 +36,7 @@ export default function Myskills({ skills }: InferGetStaticPropsType<typeof getS
 				</div>
 			</div>
 			<SideBar />
-			<section className="flex flex-wrap justify-around mx-8 md:mx-10 xl:max-w-screen-xl xl:mx-auto">
+			<section className="flex flex-wrap justify-around pb-12 mx-8 md:mx-10 xl:max-w-screen-xl xl:mx-auto">
 
 					{skills.map((skill, id) => (
 						<SkillCard

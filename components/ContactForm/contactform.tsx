@@ -3,7 +3,7 @@ import { Formik } from 'formik'
 
 const ContactForm = () => {
 	return (
-		<section className='mx-8 md:mx-10 xl:max-w-screen-xl xl:mx-auto mb-20 xl:flex xl:py-10'>
+		<section className='pb-12 mx-8 md:mx-10 xl:max-w-screen-xl xl:mx-auto xl:flex xl:py-10'>
 			<h2 className='text-lg font-serif font-bold mt-10 mb-6 xl:w-5/12 xl:mt-0'>Contact Me</h2>
 
 			<Formik

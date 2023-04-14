@@ -11,30 +11,11 @@ import {
 	FilterLeftSVG,
 } from "../Icons/icons";
 
-export function openSidebar(param: string) {
+export function openSidebar() {
 	if (typeof document !== "undefined") {
 		const eltsidebar = document.querySelector(".sidebar");
-		const eltminimize = document.querySelector(".minimize");
-		const eltprojects = document.querySelector(".projects");
-		const eltaboutme = document.querySelector(".aboutme");
-
-		if (eltsidebar !== null && eltminimize !== null) {
+		if (eltsidebar !== null) {
 			eltsidebar.classList.toggle("hidden");
-			eltminimize.classList.remove("hidden");
-
-console.log(eltminimize.classList)
-
-			if (eltprojects !== null && eltaboutme !== null) {
-				if (param !== "none") {
-					if (param === "aboutme") {
-						eltprojects.classList.add("hidden");
-						eltaboutme.classList.remove("hidden");
-					} else {
-						eltaboutme.classList.add("hidden");
-						eltprojects.classList.remove("hidden");
-					}
-				}
-			}
 		}
 	}
 }
@@ -69,8 +50,8 @@ export const SideBar = (): React.ReactElement => {
 	return (
 		<>
 			<span
-				className="minimize fixed top-40 left-6 z-20 text-white text-4xl cursor-pointer hidden"
-				onClick={() => openSidebar("none")}>
+				className="minimize fixed top-40 left-6 z-20 text-white text-4xl cursor-pointer"
+				onClick={openSidebar}>
 				<FilterLeftSVG />
 			</span>
 			<div className="sidebar fixed left-2 p-2 w-[300px] z-20 overflow-y-auto text-center bg-gray-900 hidden">
@@ -79,7 +60,7 @@ export const SideBar = (): React.ReactElement => {
 						<h1 className="text-gray-200 text-[15px] ml-3">
 							Philippe Joubard<br></br>Développeur Web
 						</h1>
-						<div className="cursor-pointer" onClick={() => openSidebar("none")}>
+						<div className="cursor-pointer" onClick={openSidebar}>
 							<CloseXSVG></CloseXSVG>
 						</div>
 					</div>

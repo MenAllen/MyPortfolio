@@ -46,7 +46,7 @@ export default function Aboutme() {
 					</p>
 					<button
 						className="border-myGrey-900 px-10 py-4 border uppercase text-xxs tracking-wider hover:bg-myGrey-900 hover:text-white transition-all"
-						onClick={ () => openSidebar('aboutme')}>
+						onClick={openSidebar}>
 						More
 					</button>
 				</div>
