@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="angled-text">Texte incliné</div>
+</div>
+
+.container {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.angled-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 18px;
+  line-height: 1.2;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transform-origin: 0 0;
+  box-sizing: border-box;
+}

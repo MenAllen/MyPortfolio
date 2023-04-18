@@ -18,7 +18,7 @@ export const ProjectCard = ({
 	slug: string;
 }) => {
 	return (
-		<section className="overlay-image rounded border-2 border-myGrey-700 m-8">
+		<article className="overlay-image rounded border-2 border-myGrey-700 m-8">
 			<Image className="" src={imgURL} alt="" height="300" width="450" />
 			<div className="hover flex flex-col justify-center items-center absolute w-full h-full top-6 left-0 z-0 hover:-translate-y-6 transform-gpu ">
 				<h2 className="text-md font-bold text-white mb-2 z-0 ">{title}</h2>
@@ -29,6 +29,6 @@ export const ProjectCard = ({
 					</button>
 				</Link>
 			</div>
-		</section>
+		</article>
 	);
 };

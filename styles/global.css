@@ -123,7 +123,7 @@ a {
 
 
 
-/********* Superposition de texte sur l'image du projet *******/
+/********* Projects Picture superposition *****************/
 
 /* Conteneur principal */
 .overlay-image {
@@ -148,20 +148,11 @@ a {
   opacity: 1;
  }
 
- /*
- .overlay-image .normal {
-  transition: .5s ease;
- }
- .overlay-image:hover .normal {
-  opacity: 0;
- }*/
- 
-
  .overlay-image .hover {
   background-color: rgba(0,0,0,0.5);
  }
 
- /*=============================================================*/
+ /*======================== Carrousel in Projects  =====================================*/
 
  .image-carrousel {
   position: relative;
@@ -186,6 +177,42 @@ a {
   background-color: rgba(0,0,0,0.5);
 
  }
+
+/* ======================== Certificates ==================================== */
+#visible:hover + #hidden {
+  opacity: 0.8;
+}
+
+#visible:hover {
+  scale: 0.8;
+}
+
+#visible {
+  transition: scale 0.75s ease-in-out;
+   -moz-transition: scale 0.75s ease-in-out;
+   -webkit-transition: scale 0.75s ease-in-out;  
+}
+
+#hidden {
+  opacity: 0;
+  transition: opacity 0.75s ease-in-out;
+   -moz-transition: opacity 0.75s ease-in-out;
+   -webkit-transition: opacity 0.75s ease-in-out;
+}
+
+/* ======================== Tests ==================================== */
+
+.color200 {
+  background-color: '#b0c4de';
+}
+
+.color400 {
+  color: '#154B6F';
+}
+
+.color700 {
+color : '#203A4C';
+}
 
 @media (prefers-color-scheme: dark) {
   html {

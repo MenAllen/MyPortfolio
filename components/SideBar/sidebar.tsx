@@ -54,7 +54,7 @@ export const SideBar = (): React.ReactElement => {
 				onClick={openSidebar}>
 				<FilterLeftSVG />
 			</span>
-			<div className="sidebar fixed left-2 p-2 w-[300px] z-20 overflow-y-auto text-center bg-gray-900 hidden">
+			<aside className="sidebar fixed top-30 left-2 p-2 w-[300px] z-20 overflow-y-auto text-center bg-gray-900 hidden">
 				<div className="text-gray-100 text-xl">
 					<div className="p-2.5 mt-1 flex justify-between">
 						<h1 className="text-gray-200 text-[15px] ml-3">
@@ -97,7 +97,7 @@ export const SideBar = (): React.ReactElement => {
 							</h1>
 						</div>
 					</Link>
-					<Link href="/myCertifications">
+					<Link href="/mycertificates">
 					<div className="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white">
 						<GraduateSVG />
 						<h1 className="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1">Certifications</h1>
@@ -126,7 +126,7 @@ export const SideBar = (): React.ReactElement => {
 					<h1 className="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1">Telecom Projects</h1>
 				</div>
 				<div className="my-4 bg-gray-600 h-[1px]"></div>
-			</div>
+			</aside>
 		</>
 	);
 };

@@ -1,5 +1,9 @@
 export type skillType = [string, string]
 
+/* ============================================================================ */
+/*                                 SKILLS DATA                                  */
+/* ============================================================================ */
+
 export const skillsArray: skillType[] = [
 	['HTML', '/logos/html5.svg'],
 	['CSS3', '/logos/css3.svg'],
@@ -22,7 +26,7 @@ export const Skills: SkillData[] = [
 		slug: '1',
 		logo: '/logos/javascript.svg',
 		name: 'Javascript',
-		version: '2',
+		version: 'V13',
 		level: 3,
 		type: 'language'
 	},
@@ -30,7 +34,7 @@ export const Skills: SkillData[] = [
 		slug: '2',
 		logo: '/logos/html5.svg',
 		name: 'HTML',
-		version: '5',
+		version: 'V5',
 		level: 3,
 		type: 'language'
 	},
@@ -38,7 +42,7 @@ export const Skills: SkillData[] = [
 		slug: '3',
 		logo: '/logos/css3.svg',
 		name: 'CSS3',
-		version: '3',
+		version: 'V3',
 		level: 3,
 		type: 'language'
 	},
@@ -46,7 +50,7 @@ export const Skills: SkillData[] = [
 		slug: '4',
 		logo: '/logos/typescript.svg',
 		name: 'Typescript',
-		version: '2',
+		version: 'V5',
 		level: 3,
 		type: 'language'
 	},
@@ -54,7 +58,7 @@ export const Skills: SkillData[] = [
 		slug: '5',
 		logo: '/logos/bootstrap-fill.svg',
 		name: 'Bootstrap',
-		version: '2',
+		version: 'V5',
 		level: 3,
 		type: 'framework'
 	},
@@ -62,15 +66,15 @@ export const Skills: SkillData[] = [
 		slug: '6',
 		logo: '/logos/sass.svg',
 		name: 'Sass',
-		version: '2',
+		version: 'V1',
 		level: 3,
-		type: 'preprocesseur'
+		type: 'preproc'
 	},
 	{
 		slug: '7',
 		logo: '/logos/react.svg',
 		name: 'React',
-		version: '2',
+		version: 'V18',
 		level: 3,
 		type: 'framework'
 	},
@@ -78,7 +82,7 @@ export const Skills: SkillData[] = [
 		slug: '8',
 		logo: '/logos/next-js.svg',
 		name: 'NextJS',
-		version: '2',
+		version: 'V13',
 		level: 3,
 		type: 'framework'
 	},
@@ -86,11 +90,193 @@ export const Skills: SkillData[] = [
 		slug: '9',
 		logo: '/logos/nodejs.svg',
 		name: 'NodeJS',
-		version: '2',
+		version: 'V18',
 		level: 3,
 		type: 'outil'
 	},
+	{
+		slug: '10',
+		logo: '/logos/figma.svg',
+		name: 'Figma',
+		version: 'V2',
+		level: 3,
+		type: 'outil'
+	},
+	{
+		slug: '11',
+		logo: '/logos/jira.svg',
+		name: 'Jira',
+		version: 'V8',
+		level: 3,
+		type: 'outil'
+	},
+	{
+		slug: '12',
+		logo: '/logos/windows.svg',
+		name: 'Windows',
+		version: 'V10',
+		level: 3,
+		type: 'système'
+	},
+	{
+		slug: '13',
+		logo: '/logos/linux.svg',
+		name: 'Linux',
+		version: 'V22',
+		level: 3,
+		type: 'système'
+	},
+	{
+		slug: '14',
+		logo: '/logos/c.svg',
+		name: 'C',
+		version: 'V2',
+		level: 3,
+		type: 'language'
+	},
+	{
+		slug: '15',
+		logo: '/logos/cypress.svg',
+		name: 'Cypress',
+		version: 'V12',
+		level: 3,
+		type: 'outil'
+	},
+	{
+		slug: '16',
+		logo: '/logos/vue.svg',
+		name: 'Vue',
+		version: 'V3',
+		level: 3,
+		type: 'framework'
+	},
+	{
+		slug: '17',
+		logo: '/logos/redux.svg',
+		name: 'Redux',
+		version: 'V4',
+		level: 3,
+		type: 'outil'
+	},
+	{
+		slug: '18',
+		logo: '/logos/express.svg',
+		name: 'Express',
+		version: 'V4',
+		level: 3,
+		type: 'framework'
+	},
+	{
+		slug: '19',
+		logo: '/logos/git.svg',
+		name: 'Git',
+		version: 'V2',
+		level: 3,
+		type: 'outil'
+	},
+	{
+		slug: '20',
+		logo: '/logos/jest.svg',
+		name: 'Jest',
+		version: 'V29',
+		level: 3,
+		type: 'outil'
+	},
+	{
+		slug: '21',
+		logo: '/logos/postman.svg',
+		name: 'Postman',
+		version: 'V10',
+		level: 3,
+		type: 'outil'
+	},
+	{
+		slug: '22',
+		logo: '/logos/mysql.svg',
+		name: 'MySQL',
+		version: 'V7',
+		level: 3,
+		type: 'language'
+	},
+	{
+		slug: '23',
+		logo: '/logos/rest-api.svg',
+		name: 'REST',
+		version: '-',
+		level: 3,
+		type: 'protocole'
+	},
+	{
+		slug: '24',
+		logo: '/logos/http.svg',
+		name: 'HTTP',
+		version: 'V3',
+		level: 3,
+		type: 'protocole'
+	},
+	{
+		slug: '25',
+		logo: '/logos/scrum.svg',
+		name: 'Scrum',
+		version: '-',
+		level: 3,
+		type: 'framework'
+	},
+	{
+		slug: '26',
+		logo: '/logos/sequelizejs.svg',
+		name: 'Sequelize',
+		version: 'V6',
+		level: 3,
+		type: 'outil'
+	},
+]
 
+/* ============================================================================ */
+/*                        DIPLOMA & CERTIFICATIONS DATA                         */
+/* ============================================================================ */
+export interface CertificatesData {
+	id: string
+	logo: string
+	name: string
+	date: string
+	type: string
+	level: string
+}
+
+export const Certificates: CertificatesData[] = [
+	{
+		id: '1',
+		logo: '/logos/openclassrooms.jpg',
+		name: 'Développeur concepteur logiciel',
+		date: '06/03/2023',
+		type: 'diplôme',
+		level: 'Titre 6 RNCP'
+	},
+	{
+		id: '2',
+		logo: '/logos/openclassrooms.jpg',
+		name: 'Développeur web',
+		date: '03/12/2021',
+		type: 'diplôme',
+		level: 'Titre 5 RNCP'
+	},
+	{
+		id: '3',
+		logo: '/logos/cisco.png',
+		name: 'CCNA / CCNP Routing & Switching',
+		date: '03/12/2021',
+		type: 'diplôme',
+		level: 'Titre 5 RNCP'
+	},
+	{
+		id: '4',
+		logo: '/logos/eseo.jpg',
+		name: 'Ingénieur ESEO',
+		date: '22/06/1984',
+		type: 'diplôme',
+		level: 'BAC+5'
+	},
 
 ]
 

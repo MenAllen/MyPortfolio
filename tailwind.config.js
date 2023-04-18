@@ -24,6 +24,7 @@ module.exports = {
 			serif: ['Ibarra Real Nova', 'serif'],
 		},
 		fontSize: {
+			xxxs: '10px',
 			xxs: '12px',
 			xs: '15px',
 			sm: '16px',
@@ -44,6 +45,7 @@ module.exports = {
 					500: '#5FB4A2',
 				},
 				myBlue: {
+					200: '#659BBF',
 					400: '#154B6F',
 					700: '#203A4C',
 				},
