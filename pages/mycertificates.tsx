@@ -13,7 +13,9 @@ export async function getStaticProps() {
 	};
 }
 
-export default function Mycertificates({ certificates }: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function Mycertificates({
+	certificates,
+}: InferGetStaticPropsType<typeof getStaticProps>) {
 	/* Order elements by Type */
 	const skillTypeTab = [
 		"Langage",
@@ -30,25 +32,56 @@ export default function Mycertificates({ certificates }: InferGetStaticPropsType
 		<Layout>
 			<HeadComponent title="myCertificates" />
 
-			<div className="h-1 h-20 mx-10 xl:max-w-screen-xl xl:mx-auto">
-				<div className='bg-myBlue-400 rounded w-4/5 lg:w-1/2'>
-				<p className="text-sm sm:text-md text-center text-white font-bold">Diplômes / Certifications</p>
-				</div>
-			</div>
 			<SideBar />
 			<section className="flex flex-col flex-start pb-12 mx-8 md:mx-10 xl:max-w-screen-xl xl:mx-auto">
 
-					{certificates.map((certificate, index) => (
-						<CertifCard
-							key={index}
-              id={certificate.id}
-              date={certificate.date}
-							logo={certificate.logo}
-							name={certificate.name}
-							level={certificate.level}
-							type={certificate.type}
-						/>
-					))}
+				<div className="h-20">
+					<div className="bg-myBlue-400 rounded w-4/5 lg:w-1/2">
+						<p className="text-sm sm:text-md text-center text-white font-bold">Diplômes</p>
+					</div>
+				</div>
+
+				{certificates.map(
+					(certificate, index) =>
+						certificate.type === "diplôme" && (
+							<CertifCard
+								key={index}
+								id={certificate.id}
+								date={certificate.date}
+								logo={certificate.logo}
+								url={certificate.url}
+								name={certificate.name}
+								level={certificate.level}
+								type={certificate.type}
+								description={certificate.description}
+							/>
+						)
+				)}
+
+				<div className="h-20">
+					<div className="bg-myBlue-400 rounded w-4/5 lg:w-1/2">
+						<p className="text-sm sm:text-md text-center text-white font-bold">Certifications</p>
+					</div>
+				</div>
+
+				{certificates.map(
+					(certificate, index) =>
+						certificate.type === "certificat" && (
+							<CertifCard
+								key={index}
+								id={certificate.id}
+								date={certificate.date}
+								logo={certificate.logo}
+								url={certificate.url}
+								name={certificate.name}
+								level={certificate.level}
+								type={certificate.type}
+								description={certificate.description}
+							/>
+						)
+				)}
+
+
 			</section>
 		</Layout>
 	);

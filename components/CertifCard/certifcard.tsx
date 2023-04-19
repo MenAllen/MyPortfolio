@@ -4,18 +4,29 @@ import Image from "next/image";
 export const CertifCard = ({
 	id,
 	logo,
+  url,
 	name,
 	level,
 	type,
 	date,
+  description,
 }: {
 	id: string;
 	logo: string;
+  url: string;
 	name: string;
 	level: string;
 	type: string;
 	date: string;
+  description: string,
 }) => {
+
+  const showCertificate = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault();
+    console.log(url)
+    return ( <embed className="embed-pdf" src={url} type="application/pdf"/>)
+  }
+
 	return (
 		<div className="flex flex-row">
 			<article id="visible" className="w-2/5 mb-10 mr-3 rounded-md border-2 border-myGrey-700 shadow-xl bg-myGrey-300 relative overflow-hidden">
@@ -28,17 +39,16 @@ export const CertifCard = ({
 						{date} {level}
 					</p>
 				</div>
-				<p className="absolute top-3 -left-1 py-0.5 px-8 bg-myGreen-300 -ml-10 w-36 transform -rotate-45 text-xxs text-white text-center xl:max-w-sm">
+				<a href={url} target='_blank' className="absolute top-3 -left-1 py-0.5 px-8 bg-myGreen-300 -ml-10 w-36 transform -rotate-45 text-xxs text-white text-center xl:max-w-sm">
 					{type}
-				</p>
-				{/*			<div id="additional" className="opacity-0 flex flex-col justify-center items-center w-full h-full transition transform ease-in-out delay-150 hover:scale-150 hover:opacity-100 transform-gpu ">Texte à compléter</div> */}
+				</a>
 			</article>
 
-			<article id="hidden" className="w-3/5 mb-10 rounded-md border-2 border-myGrey-700 shadow-xl bg-myGrey-300">
-				<div className="w-full h-full text-white bg-myBlue-200">
-					Texte à compléter
+			{ type === "diplôme" && <article id="hidden" className="w-3/5 mb-10 rounded-md border-2 border-myGrey-700 shadow-xl bg-myGrey-300">
+				<div className="whitespace-pre-wrap w-full h-full text-xxxs md:text-xxs text-white bg-myBlue-200">
+					{description}
 				</div>
-			</article>
+			</article>}
 		</div>
 	);
 };

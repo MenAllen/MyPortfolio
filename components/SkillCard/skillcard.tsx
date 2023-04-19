@@ -24,7 +24,7 @@ export const SkillCard = ({
 
 
 	return (
-		<article className="w-32 m-2 rounded border-2 border-myGrey-700 bg-myGrey-300 overflow-hidden">
+		<article className="w-32 m-2 rounded border-2 border-myGrey-700 bg-myGrey-300 shadow-xl hover:scale-110 overflow-hidden">
 			<div className="flex flex-col justify-center items-center mx-12 my-5">
 				<div className="h-12">
 					<Image src={logo} alt="skill logo" height="96" width="96" />
