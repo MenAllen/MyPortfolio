@@ -23,6 +23,7 @@ Added Project Page step 1
 Added Project Page step 2
 Shortcut menu aboutme and portfolio
 Added Certificates page
+Added Antd Modal to display certificates description 
 
 
 ## Learn More

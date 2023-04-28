@@ -13,6 +13,8 @@
     "@types/node": "18.15.11",
     "@types/react": "18.0.31",
     "@types/react-dom": "18.0.11",
+    "@types/styled-components": "^5.1.26",
+    "antd": "^5.4.6",
     "bootstrap-icons": "^1.10.4",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
