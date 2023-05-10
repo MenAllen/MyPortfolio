@@ -685,36 +685,35 @@ export const Projects: ProjectData[] = [
 	},
 	{
 		slug: "bagou",
-		heroImage: "/images/portfolio/web-loceane.webp",
-		previewImage: "/images/portfolio/web-loceane.webp",
+		heroImage: "/images/portfolio/web-mysudoku.webp",
+		previewImage: "/images/portfolio/web-mysudoku.webp",
 		images: [
 			{
-				image: "/images/portfolio/web-loceane.webp",
-				title: "Landing page",
-				description: "Le menu avec la vue principale du village et son port",
+				image: "/images/portfolio/web-mysudoku.webp",
+				title: "Un menu et une grille",
+				description: "Le menu permet de choisir une des grilles chargées, tester un chiffre rentré, importer une ou plusieurs grilles depuis un fichier et lancer ou arrêter une résolution automatique",
 			},
 			{
-				image: "/images/portfolio/web-loceane1.jpg",
-				title: "Le carrousel",
-				description:
-					"Un clic sur la landing page amène au carrousel qui permet de visiter l'intérieur",
+				image: "/images/portfolio/sudoku2.jpg",
+				title: "Résoudre une grille",
+				description: "Les chiffres rentrés manuellement ou testés par l'algorithme s'affichent de façon identifiable",
 			},
 			{
-				image: "/images/portfolio/web-loceane2.jpg",
-				title: "Page A Propos",
-				description: "la page qui renseigne sur les visites et activités possibles",
+				image: "/images/portfolio/sudoku3.jpg",
+				title: "Charger des grilles",
+				description: "Importer un fichier JSON pour résoudre vos propres grilles",
 			},
 		],
-		title: "L'Océane",
-		short: "Un site vitrine pour présenter un bien immobilier à la location saisonnière",
+		title: "Sudoku",
+		short: "Une App pour résoudre mon Sudoku si je bloque",
 		description:
-			'La demande était de créer rapidement une landing page présentant un extérieur du bien immobilier,	de visualiser l"intérieur dans un carrousel et enfin un menu "A propos" décrivant l"environnement avec les possibilités d"activité',
+			'Un menu et une grille pour importer une grille d\'un fichier JSON, le charger dans le local storage, et soit le résoudre en local ou lancer la résolution automatique, ce qui peut prendre plusieurs heures...',
 		competences:
-			'Pour cela, j"ai utilisé HTML5, CSS Flexbox, JavaScript & ReactJS: Configuration des routes avec React Router, 8 Composants React: Header, Footer, Banner, Card, Carrousel, Dropdown, Error, Pitch, et Utilisation des hooks useState & useEffect',
+			'Pour cela, j"ai utilisé l\'algorithme backtracking, HTML, CSS, Bootstrap, Javascript et l\'API File',
 		development_topics: ["Front End Development"],
-		stack: ["HTML", "CSS3", "Javascript", "ReactJS"],
-		code_url: "https://github.com/MenAllen/loceane",
-		demo_url: "https://scintillating-froyo-b45427.netlify.app/",
+		stack: ["HTML", "CSS3", "Javascript", "Bootstrap"],
+		code_url: "https://github.com/MenAllen/MySudoku",
+		demo_url: "https://menallen.github.io/MySudoku/",
 		background: [
 			`This project was a front-end  challenge from Frontend Mentor. It’s a platform that 
       enables you to practice building websites to a design and project brief. Each challenge 
@@ -724,4 +723,85 @@ export const Projects: ProjectData[] = [
       me to improve and adapt my style.`,
 		],
 	},
+	{
+		slug: "digo",
+		heroImage: "/images/portfolio/web-mytodolist.webp",
+		previewImage: "/images/portfolio/web-mytodolist.webp",
+		images: [
+			{
+				image: "/images/portfolio/todolist1.jpg",
+				title: "Menu List",
+				description: "Ajouter ou supprimer une tâche, lister au choix, toutes les tâches, les tâches faites ou à faire",
+			},
+			{
+				image: "/images/portfolio/todolist2.jpg",
+				title: "Menu Import",
+				description: "Importer une liste de tâches à partir d'un fichier JSON",
+			},
+			{
+				image: "/images/portfolio/todolist3.jpg",
+				title: "Menu Export",
+				description: "Exporter la liste des tâches en enregistrant un fichier JSON",
+			},
+		],
+		title: "Todolist",
+		short: "La demande d'une asso pour une Todolist persistante, simple et accessible",
+		description:
+			'Un frontend HTLM/CSS/JAVASCRIPT présentant une liste de tâches. On peut ajouter une tâche, la cocher si terminée, la supprimer. On peut également filtrer les tâches terminées ou en cours. Enfin on peut exporter la liste des tâches pour en faire un fichier JSON que l\'on peut importer ensuite, rendant inutile le besoin d\'un backend',
+		competences:
+			'Pour cela, j"ai utilisé HTML, CSS, Bootstrap, Javascript et l\'API File',
+		development_topics: ["Front End Development"],
+		stack: ["HTML", "CSS3", "Javascript", "Bootstrap"],
+		code_url: "https://github.com/MenAllen/MyTodoList",
+		demo_url: "https://menallen.github.io/MyTodoList/",
+		background: [
+			`This project was a front-end  challenge from Frontend Mentor. It’s a platform that 
+      enables you to practice building websites to a design and project brief. Each challenge 
+      includes mobile and desktop designs to show how the website should look at different 
+      screen sizes. Creating these projects has helped me refine my workflow and solve 
+      real-world coding problems. I’ve learned something new with each project, helping 
+      me to improve and adapt my style.`,
+		],
+	},
+	{
+		slug: "buri",
+		heroImage: "/images/portfolio/web-portfolio-first.webp",
+		previewImage: "/images/portfolio/web-portfolio-first.webp",
+		images: [
+			{
+				image: "/images/portfolio/portfolio1.jpg",
+				title: "Mon Portfolio",
+				description: "Site de présentation de mes réalisations",
+			},
+			{
+				image: "/images/portfolio/portfolio2.jpg",
+				title: "Menu Import",
+				description: "Importer une liste de tâches à partir d'un fichier JSON",
+			},
+			{
+				image: "/images/portfolio/portfolio3.jpg",
+				title: "Menu Export",
+				description: "Exporter la liste des tâches en enregistrant un fichier JSON",
+			},
+		],
+		title: "Mon Portfolio",
+		short: "Site de présentation de mes réalisations",
+		description:
+			'Développer un site pour la présentation de mes réalisations en tant que développeur web, développeur soft embarqué et chef de projet',
+		competences:
+			'Pour cela, j"ai utilisé HTML, CSS, Javascript et React',
+		development_topics: ["Front End Development"],
+		stack: ["HTML", "CSS3", "Javascript", "Bootstrap"],
+		code_url: "https://github.com/MenAllen/MyPortfolio",
+		demo_url: "https://www.pjoubard.com/",
+		background: [
+			`This project was a front-end  challenge from Frontend Mentor. It’s a platform that 
+      enables you to practice building websites to a design and project brief. Each challenge 
+      includes mobile and desktop designs to show how the website should look at different 
+      screen sizes. Creating these projects has helped me refine my workflow and solve 
+      real-world coding problems. I’ve learned something new with each project, helping 
+      me to improve and adapt my style.`,
+		],
+	},
+
 ];

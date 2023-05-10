@@ -10,7 +10,7 @@ export default function CurriculumV() {
 			<HeadComponent title="CV" />
 			<section className="pb-12 my-8 mx-8 md:mx-10 xl:max-w-screen-xl xl:mx-auto md:flex ">
 			<SideBar />		
-				<embed className="embed-pdf" src="pdf/philippejoubard.pdf" type="application/pdf"/>
+				<embed className="embed-pdf" src="pdf/PhilippeJoubard-min.pdf" type="application/pdf"/>
 			</section>
 		</Layout>
 	);
