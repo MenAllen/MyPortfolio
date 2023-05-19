@@ -619,6 +619,7 @@ export interface ProjectData {
 	code_url: string;
 	demo_url: string;
 	background: string[];
+	type: string;
 }
 
 export const Projects: ProjectData[] = [
@@ -662,6 +663,7 @@ export const Projects: ProjectData[] = [
       real-world coding problems. I’ve learned something new with each project, helping 
       me to improve and adapt my style.`,
 		],
+		type: "web"
 	},
 	{
 		slug: "toto",
@@ -692,6 +694,7 @@ export const Projects: ProjectData[] = [
 		background: [
 			``,
 		],
+		type: "web"
 	},
 	{
 		slug: "bagou",
@@ -732,6 +735,7 @@ export const Projects: ProjectData[] = [
       real-world coding problems. I’ve learned something new with each project, helping 
       me to improve and adapt my style.`,
 		],
+		type: "web"
 	},
 	{
 		slug: "digo",
@@ -772,6 +776,7 @@ export const Projects: ProjectData[] = [
       real-world coding problems. I’ve learned something new with each project, helping 
       me to improve and adapt my style.`,
 		],
+		type: "web"
 	},
 	{
 		slug: "buri",
@@ -812,6 +817,7 @@ export const Projects: ProjectData[] = [
       real-world coding problems. I’ve learned something new with each project, helping 
       me to improve and adapt my style.`,
 		],
+		type: "web"
 	},
 	{
 		slug: "lora",
@@ -857,6 +863,7 @@ export const Projects: ProjectData[] = [
       real-world coding problems. I’ve learned something new with each project, helping 
       me to improve and adapt my style.`,
 		],
+		type: "web"
 	},
 	{
 		slug: "lome",
@@ -900,6 +907,7 @@ export const Projects: ProjectData[] = [
       real-world coding problems. I’ve learned something new with each project, helping 
       me to improve and adapt my style.`,
 		],
+		type: "web"
 	},
 	{
 		slug: "malo",
@@ -948,6 +956,7 @@ export const Projects: ProjectData[] = [
       real-world coding problems. I’ve learned something new with each project, helping 
       me to improve and adapt my style.`,
 		],
+		type: "web"
 	},
 	{
 		slug: "osi",
@@ -981,6 +990,7 @@ export const Projects: ProjectData[] = [
       real-world coding problems. I’ve learned something new with each project, helping 
       me to improve and adapt my style.`,
 		],
+		type: "web"
 	},
 	{
 		slug: "mura",
@@ -1024,6 +1034,7 @@ export const Projects: ProjectData[] = [
       real-world coding problems. I’ve learned something new with each project, helping 
       me to improve and adapt my style.`,
 		],
+		type: "web"
 	},
 	{
 		slug: "ramo",
@@ -1072,6 +1083,7 @@ export const Projects: ProjectData[] = [
       real-world coding problems. I’ve learned something new with each project, helping 
       me to improve and adapt my style.`,
 		],
+		type: "web"
 	},
 	{
 		slug: "moni",
@@ -1105,6 +1117,7 @@ export const Projects: ProjectData[] = [
       real-world coding problems. I’ve learned something new with each project, helping 
       me to improve and adapt my style.`,
 		],
+		type: "web"
 	},
 	{
 		slug: "tula",
@@ -1138,6 +1151,7 @@ export const Projects: ProjectData[] = [
       real-world coding problems. I’ve learned something new with each project, helping 
       me to improve and adapt my style.`,
 		],
+		type: "web"
 	},
 	{
 		slug: "bako",
@@ -1181,6 +1195,7 @@ export const Projects: ProjectData[] = [
       real-world coding problems. I’ve learned something new with each project, helping 
       me to improve and adapt my style.`,
 		],
+		type: "web"
 	},
 	{
 		slug: "palo",
@@ -1219,6 +1234,7 @@ export const Projects: ProjectData[] = [
       real-world coding problems. I’ve learned something new with each project, helping 
       me to improve and adapt my style.`,
 		],
+		type: "web"
 	},
 	{
 		slug: "kopa",
@@ -1257,6 +1273,7 @@ export const Projects: ProjectData[] = [
       real-world coding problems. I’ve learned something new with each project, helping 
       me to improve and adapt my style.`,
 		],
+		type: "web"
 	},
 	{
 		slug: "peki",
@@ -1300,6 +1317,7 @@ export const Projects: ProjectData[] = [
       real-world coding problems. I’ve learned something new with each project, helping 
       me to improve and adapt my style.`,
 		],
+		type: "web"
 	},
 	{
 		slug: "toka",
@@ -1333,6 +1351,7 @@ export const Projects: ProjectData[] = [
       real-world coding problems. I’ve learned something new with each project, helping 
       me to improve and adapt my style.`,
 		],
+		type: "projet"
 	},
 	{
 		slug: "bika",
@@ -1366,6 +1385,7 @@ export const Projects: ProjectData[] = [
       real-world coding problems. I’ve learned something new with each project, helping 
       me to improve and adapt my style.`,
 		],
+		type: "projet"
 	},
 	{
 		slug: "tofy",
@@ -1404,6 +1424,7 @@ export const Projects: ProjectData[] = [
       real-world coding problems. I’ve learned something new with each project, helping 
       me to improve and adapt my style.`,
 		],
+		type: "projet"
 	},
 	{
 		slug: "romi",
@@ -1437,6 +1458,7 @@ export const Projects: ProjectData[] = [
       real-world coding problems. I’ve learned something new with each project, helping 
       me to improve and adapt my style.`,
 		],
+		type: "projet"
 	},
 	{
 		slug: "neve",
@@ -1470,6 +1492,7 @@ export const Projects: ProjectData[] = [
       real-world coding problems. I’ve learned something new with each project, helping 
       me to improve and adapt my style.`,
 		],
+		type: "emb"
 	},
 	{
 		slug: "ravi",
@@ -1503,5 +1526,6 @@ export const Projects: ProjectData[] = [
       real-world coding problems. I’ve learned something new with each project, helping 
       me to improve and adapt my style.`,
 		],
+		type: "emb"
 	},
 ];
