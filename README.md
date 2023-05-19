@@ -19,12 +19,12 @@ Added SideBar
 Added Skills tab
 Added Portfolio Page
 Added Portfolio animations & responsive fixes
-Added Project Page step 1
-Added Project Page step 2
+Added Projects Pages step 1
+Added Projects Pages step 2
 Shortcut menu aboutme and portfolio
 Added Certificates page
-Added Antd Modal to display certificates description 
-
+Added Antd Modal to display certificates description
+Added Projects Pages step 3
 
 ## Learn More
 
